@@ -4,11 +4,11 @@ import Image from "next/image";
 const smallImage = require('../assets/images/Mountain-Small.png');
 
 
-
 export default function Home() {
 
   const projects = [
     {
+      id: 1,
       icon: '/images/chatbot.png',
       domain: 'Turing Tribe',
       title: 'Natural Language Processing for Ethiopian Languages',
@@ -19,6 +19,7 @@ export default function Home() {
       location: '#',
     },
     {
+      id: 2,
       icon: '/images/gear.png',
       domain: 'Machine Mavericks',
       title: 'Autonomous Plant Caretaker',
@@ -29,6 +30,7 @@ export default function Home() {
       location: '#',
     },
     {
+      id: 3,
       icon: '/images/lock.png',
       domain: 'Cyber Crew',
       title: 'Phishing Detection tool',
@@ -48,9 +50,9 @@ export default function Home() {
         <picture>
           <source media="(max-width: 480px)" srcSet="/images/Mountain-Small.png"/>
 
-          <img 
+          <Image
             src="/images/Mountain.jpg" 
-            alt="Responsive example"
+            alt=""
             width={2880} // Set width for large screens
             height={2082} // Set height for large screens
             className="absolute -z-10 top-0 left-0 lgd:-top-24"
@@ -63,16 +65,16 @@ export default function Home() {
           <picture>
             <source media="(max-width: 1024px)" srcSet="/images/Motto.png" />
 
-            <img 
+            <Image
               src="/images/Motto-Large.png" 
-              alt="Responsive example"
+              alt=""
               width={1106}
               height={286} 
               className="mb-3"
             />
           </picture>
 
-          <p className="text-center font-poppins font-light px-8 mdd:text-2xl mdd:mt-6 lgd:text-start lgd:px-2 lgd:text-lg lgd:mt-0">Join Hawassa University's vibrant community,
+          <p className="text-center font-poppins font-light px-8 mdd:text-2xl mdd:mt-6 lgd:text-start lgd:px-2 lgd:text-lg lgd:mt-0">Join Hawassa University&apos;s vibrant community,
              where bold ideas spark, 
              teamwork thrives, and we rise together!
           </p>
@@ -94,7 +96,7 @@ export default function Home() {
       <section className="h-full mt-20">
         <div className="flex flex-col lgd:flex-row lgd:pl-24 lgd:space-x-32">
           <div className="bg-[url(/images/Earnit.png)] bg-contain bg-no-repeat h-[40%] bg-center flex flex-col justify-center items-center mdd:h-[50%] lgd:bg-cover lgd:w-[30%] lgd:aspect-square">
-            <Image 
+            <Image alt="" 
               src='/images/crown.gif'
               width={500}
               height={500}
@@ -113,7 +115,7 @@ export default function Home() {
           </p>
           <button className="w-full py-3 bg-accentOrange rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
             <h1>Crown Bearers</h1> 
-            <img className="size-9" src="/images/RightArrow.png"/>
+            <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
         </div>
       </div>
@@ -124,7 +126,7 @@ export default function Home() {
       <section className="h-[100vh] flex flex-col justify-center relative items-center  mdd:mt-20 lgd:flex-row lgd:justify-center">
         <div className="px-10 lgd:order-2 lgd:w-full lgd:mr-32 relative">
           {/* <div className="absolute bg-accentTeal top-[40%] left-[40%] -z-10 self-center aspect-square w-32 rounded-full glowTeal"></div> */}
-          <img
+          <Image alt=""
             width={702}
             height={672}  
             src='/images/capsules.png'
@@ -143,7 +145,7 @@ export default function Home() {
           </p>
           <button className="w-full py-3 bg-accentTeal rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
             <h1>Explore Domains</h1> 
-            <img className="size-9" src="/images/RightArrow.png"/>
+            <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
         </div>
         <div className="h-2 bg-accentTeal absolute bottom-0 w-full glowTeal"></div>
@@ -152,7 +154,7 @@ export default function Home() {
       {/* Events Section */}
       <section className=" h-[100vh] flex flex-col justify-center relative items-center  mdd:mt-20 lgd:flex-row lgd:justify-center">
         <div className="px-10 lgd:ml-20">
-          <img
+          <Image alt=""
             width={687}
             height={672}  
             src='/images/Disco.png'
@@ -168,7 +170,7 @@ export default function Home() {
           </p>
           <button className="w-full py-3 bg-accentRed rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-2/5 lgd:py-3 lgd:text-sm lgd:mt-6">
             <h1>Events Timeline</h1> 
-            <img className="size-9" src="/images/RightArrow.png"/>
+            <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
         </div>
         <div className="h-2 bg-accentRed absolute bottom-0 w-full glowRed"></div>
@@ -179,7 +181,7 @@ export default function Home() {
       {/* Projects Section */}
       <section className="flex flex-col items-center mt-20">
         <div className="px-10">
-          <Image
+          <Image alt=""
             src='/images/projects.png'
             className="w-[100%]"
             width={600}
@@ -189,19 +191,19 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center mt-32 px-16 space-y-32 mdd:flex-row  mdd:space-x-5  lgd:space-x-20 lgd:px-24 mdd:items-center mdd:space-y-0">
           {projects.map((project) => 
-            <ProjectCard project={project}/>
+            <ProjectCard project={project} key={project.id}/>
           )}
         </div>
         <button className="w-4/5 py-3 bg-accentNavy rounded-full font-semibold mt-12 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/5 lgd:py-3 lgd:text-sm lgd:mt-12">
             <h1>More Projects</h1> 
-            <img className="size-9" src="/images/RightArrow.png"/>
+            <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
         </button>
         <div className="h-2 bg-accentNavy w-full glowNavy mt-32 "></div>
       </section>
 
       <section className="h-[100vh] flex flex-col justify-center relative items-center  mdd:mt-20 lgd:flex-row lgd:justify-center">
         <div className="pl-10 lgd:order-2 lgd:w-full lgd:mr-32">
-          <img
+          <Image alt=""
             width={702}
             height={672}  
             src='/images/finalCTA.png'
@@ -218,8 +220,8 @@ export default function Home() {
              to join us? Click below and find out.
           </p>
           <button className="w-full py-3 bg-[#818282] rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
-            <h1>Members' Criteria</h1> 
-            <img className="size-9" src="/images/RightArrow.png"/>
+            <h1>Members&apos; Criteria</h1> 
+            <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
         </div>
       </section>

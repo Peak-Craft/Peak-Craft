@@ -11,7 +11,7 @@ const Footer = () => {
                   <div>
                       <div className='mb-6'>
                         <h1 className='text-4xl font-alata mb-1 text-center'>Still Got Questions?</h1>
-                        <p className='text-center mdd:text-start'>Send it here and we'll reply</p>
+                        <p className='text-center mdd:text-start'>Send it here and we&apos;ll reply</p>
                       </div>
                       <div className='border-white border-[1px] rounded w-full aspect-video p-5 relative mb-8'>
                          <textarea 
@@ -19,7 +19,7 @@ const Footer = () => {
                            className='bg-transparent no-resize focus:outline-none w-full'
                         />
                         <button>
-                            <Image height={30} width={30} className='absolute bottom-3 right-3' src='/images/send.png '/>
+                            <Image alt='' height={30} width={30} className='absolute bottom-3 right-3' src='/images/send.png '/>
                         </button>
                       </div>
                   </div>
@@ -28,20 +28,20 @@ const Footer = () => {
                 <div className='mb-8'>
                   <h1 className='font-semibold text-center mb-2'>Our Socials</h1>
                   <div className='flex space-x-4'>
-                      <Image width={40} height={40} src='/images/TikTok.png'/>
-                      <Image width={40} height={40} src='/images/LinkedIn.png'/>
-                      <Image width={40} height={40} src='/images/GitHub.png'/>
-                      <Image width={40} height={40} src='/images/Post.png'/>
+                      <Image alt='' width={40} height={40} src='/images/TikTok.png'/>
+                      <Image alt='' width={40} height={40} src='/images/LinkedIn.png'/>
+                      <Image alt='' width={40} height={40} src='/images/GitHub.png'/>
+                      <Image alt='' width={40} height={40} src='/images/Post.png'/>
                   </div>
                 </div>
                 <div className='flex flex-col items-center space-y-2 mb-6'>
-                    <Image width={50} height={50} src='/images/hulogo.png'/>
+                    <Image alt='' width={50} height={50} src='/images/hulogo.png'/>
                     <h1 className='font-light'>Entity of Hawassa University</h1>
                 </div>
               </div>
               <div>
                 <div className='flex flex-col items-center'>
-                  <Image width={332} height={160} className='w-32 h-auto' src='/images/logo+text.png'/>
+                  <Image alt='' width={332} height={160} className='w-32 h-auto' src='/images/logo+text.png'/>
                   <h1>Reach Peaks Upon Peaks!</h1>
                 </div>
                 <div className=' flex flex-col items-center mt-5'>

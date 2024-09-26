@@ -4,6 +4,7 @@ const ProjectCard = ({project}) => {
     return (
         <div className='bg-background px-12 pt-24 flex flex-col  items-center rounded-[14px] text-center aspect-[3/5] relative shadow-3xl mdd:pt-20'>
             <Image 
+              alt=''
               src={project.icon}
               width={300}
               height={300}

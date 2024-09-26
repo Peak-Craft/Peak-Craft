@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #1f2020;
+  --foreground: #ffffff;
+  --accentOrange: #fe942d;
+  --accentRed: #f53a4c;
+  --accentTeal: #24f1ef;
+  --accentNavy: #122c62;
+  --fontOswald: 'Oswald';
+  --fontAlata: 'Alata';
+  --fontPoppins: 'Poppins';
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family:  'Poppins', Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 5px white;
+    color: transparent;
+    line-height: 48px;
+  }
+
+  .blurbox {
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .glowTeal {
+    filter: drop-shadow(0px 0px 25px rgba(36, 241, 239, 0.60));
+  }
+  .glowOrange {
+    filter: drop-shadow(0px 0px 25px rgba(254, 148, 45, 0.60));
+  }
+  .glowRed {
+    filter: drop-shadow(0px 0px 25px rgba(249, 43, 61, 0.60));
+  }
+  .glowNavy {
+    filter: drop-shadow(0px 0px 25x rgba(18, 44, 98, 0.60));
+  }
+  .no-resize {
+    resize: none;
+  }
+}

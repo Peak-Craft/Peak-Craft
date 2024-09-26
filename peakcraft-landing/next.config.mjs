@@ -4,8 +4,8 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath:'/.',
-    assetPrefix: '/.',
+    basePath:'/Peak-Craft',
+    assetPrefix: '/Peak-Craft',
 };
 
 export default nextConfig;

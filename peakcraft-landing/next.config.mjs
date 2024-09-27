@@ -5,7 +5,7 @@ const nextConfig = {
         unoptimized: true,
     },
     basePath:'/Peak-Craft',
-    assetPrefix: '/Peak-Craft',
+    assetPrefix: 'https://peak-craft.github.io/Peak-Craft',
 };
 
 export default nextConfig;

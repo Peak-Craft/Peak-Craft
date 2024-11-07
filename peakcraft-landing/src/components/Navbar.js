@@ -33,11 +33,11 @@ const Navbar = () => {
             <button onClick={() => {setIsOpen(!isOpen)} }>
                 <Image  alt='' className={`${!isOpen ? 'hidden': ''} size-7 float-end`} src={require('../assets/icons/Close.png')}/>
             </button>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Domains</a></li>
-              <li className="md:px-10 md:py-2 md:border-white md:border-[1px] md:rounded cursor-pointer"><a href="#">Join Us</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/domains">Domains</a></li>
+              <li className="md:px-10 md:py-2 md:border-white md:border-[1px] md:rounded cursor-pointer"><a href="https://peak-apply.paperform.co/">Join Us</a></li>
             </ul>
           </div>
         </div>

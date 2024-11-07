@@ -1,10 +1,18 @@
+"use client"
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import Image from "next/image";
 const smallImage = require('../assets/images/Mountain-Small.png');
+import { useRouter } from "next/navigation";
 
 
 export default function Home() {
+
+  const handleApply = () => {
+    window.location.href = 'https://peak-apply.paperform.co/';
+  }
+
+  const router = useRouter();
 
   const projects = [
     {
@@ -79,8 +87,8 @@ export default function Home() {
              teamwork thrives, and we rise together!
           </p>
           <div className="flex w-full justify-evenly absolute bottom-[10%] mdd:relative mdd:bottom-0 mdd:justify-center mdd:space-x-10 mdd:mt-10 lgd:justify-start lgd:mt-3 lgd:space-x-4">
-            <button className="bg-accentRed text-lg text-white font-poppins font-semibold w-fit px-14 py-2 rounded-full mdd:text-3xl  mdd:px-20 mdd:py-5 lgd:text-base lgd:px-16 lgd:py-2">Apply</button>
-            <button className="bg-transparen border-white border-2 text-white font-poppins font-semibold w-fit px-10 py-2 rounded-full mdd:text-3xl  mdd:px-14 mdd:py-5 lgd:text-base lgd:min-w-fit lgd:py-2 lgd:px-12">Learn More</button>
+            <button className="bg-accentRed text-lg text-white font-poppins font-semibold w-fit px-14 py-2 rounded-full mdd:text-3xl  mdd:px-20 mdd:py-5 lgd:text-base lgd:px-16 lgd:py-2" onClick={handleApply}>Apply</button>
+            <button className="bg-transparen border-white border-2 text-white font-poppins font-semibold w-fit px-10 py-2 rounded-full mdd:text-3xl  mdd:px-14 mdd:py-5 lgd:text-base lgd:min-w-fit lgd:py-2 lgd:px-12" onClick={() => {router.push('About Us')}}>Learn More</button>
           </div>
         </div>
 
@@ -113,7 +121,7 @@ export default function Home() {
             top with teams committed to achievements.
              Let’s build your legacy together!
           </p>
-          <button className="w-full py-3 bg-accentOrange rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
+          <button onClick={() => {router.push('/LeaderBoard')}} className="w-full py-3 bg-accentOrange rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
             <h1>Crown Bearers</h1> 
             <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
@@ -143,7 +151,7 @@ export default function Home() {
                 with a supportive community. Let your
                  interests lead the way!
           </p>
-          <button className="w-full py-3 bg-accentTeal rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
+          <button onClick={() => {router.push('/Domains')}} className="w-full py-3 bg-accentTeal rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
             <h1>Explore Domains</h1> 
             <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
@@ -168,7 +176,7 @@ export default function Home() {
            From lively socials to interactive workshops, our events promise a 
            great time and unforgettable moments!
           </p>
-          <button className="w-full py-3 bg-accentRed rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-2/5 lgd:py-3 lgd:text-sm lgd:mt-6">
+          <button onClick={() => {router.push('/Events')}} className="w-full py-3 bg-accentRed rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-2/5 lgd:py-3 lgd:text-sm lgd:mt-6">
             <h1>Events Timeline</h1> 
             <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
@@ -194,7 +202,7 @@ export default function Home() {
             <ProjectCard project={project} key={project.id}/>
           )}
         </div>
-        <button className="w-4/5 py-3 bg-accentNavy rounded-full font-semibold mt-12 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/5 lgd:py-3 lgd:text-sm lgd:mt-12">
+        <button onClick={() => {router.push('/Projects')}} className="w-4/5 py-3 bg-accentNavy rounded-full font-semibold mt-12 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/5 lgd:py-3 lgd:text-sm lgd:mt-12">
             <h1>More Projects</h1> 
             <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
         </button>
@@ -219,14 +227,13 @@ export default function Home() {
             peaks not 6 feet under. Don’t know what it takes
              to join us? Click below and find out.
           </p>
-          <button className="w-full py-3 bg-[#818282] rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
+          <button onClick={() => {router.push('/Criteria')}} className="w-full py-3 bg-[#818282] rounded-full font-semibold mt-5 flex items-center justify-center space-x-2 mdd:w-3/4 mdd:mt-12 mdd:text-xl mdd:py-6 lgd:w-1/2 lgd:py-3 lgd:text-sm lgd:mt-6">
             <h1>Members&apos; Criteria</h1> 
             <Image alt="" width={50} height={50} className="size-9" src="/images/RightArrow.png"/>
           </button>
         </div>
       </section>
 
-      <Footer/>
     </div>
   );
 }

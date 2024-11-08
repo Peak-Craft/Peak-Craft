@@ -37,7 +37,7 @@ const Footer = () => {
                     <a href='https://github.com/Peak-Craft' target='_blank'>
                       <Image alt='' width={40} height={40} src='/images/GitHub.png'/>
                     </a>
-                    <a href='informaticsclub@hu.edu.et' target='_blank'>
+                    <a href='mailto:informaticsclub@hu.edu.et' target='_blank'>
                       <Image alt='' width={40} height={40} src='/images/Post.png'/>
                     </a>
                   </div>

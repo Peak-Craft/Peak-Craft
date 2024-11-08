@@ -28,16 +28,16 @@ const Footer = () => {
                 <div className='mb-8'>
                   <h1 className='font-semibold text-center mb-2'>Our Socials</h1>
                   <div className='flex space-x-4'>
-                    <a href='https://t.me/PeakCraftCommunity'>
+                    <a href='https://t.me/PeakCraftCommunity' target='_blank'>
                       <Image alt='' width={40} height={40} src='/images/Telegram.png'/>
                     </a> 
-                    <a href='https://www.linkedin.com/company/peak-craft-club'>
+                    <a href='https://www.linkedin.com/company/peak-craft-club' target='_blank'>
                       <Image alt='' width={40} height={40} src='/images/LinkedIn.png'/>
                     </a>
-                    <a href='https://github.com/Peak-Craft'>
+                    <a href='https://github.com/Peak-Craft' target='_blank'>
                       <Image alt='' width={40} height={40} src='/images/GitHub.png'/>
                     </a>
-                    <a href='informaticsclub@hu.edu.et'>
+                    <a href='informaticsclub@hu.edu.et' target='_blank'>
                       <Image alt='' width={40} height={40} src='/images/Post.png'/>
                     </a>
                   </div>

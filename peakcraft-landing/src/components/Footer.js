@@ -19,7 +19,7 @@ const Footer = () => {
                            className='bg-transparent no-resize focus:outline-none w-full'
                         />
                         <button>
-                            <Image alt='' height={30} width={30} className='absolute bottom-3 right-3' src='/images/send.png '/>
+                            <Image alt='' height={30} width={30} className='absolute bottom-3 right-3' src='/images/send.png'/>
                         </button>
                       </div>
                   </div>
@@ -28,10 +28,18 @@ const Footer = () => {
                 <div className='mb-8'>
                   <h1 className='font-semibold text-center mb-2'>Our Socials</h1>
                   <div className='flex space-x-4'>
-                      <Image alt='' width={40} height={40} src='/images/TikTok.png'/>
+                    <a href='https://t.me/PeakCraftCommunity'>
+                      <Image alt='' width={40} height={40} src='/images/Telegram.png'/>
+                    </a> 
+                    <a href='https://www.linkedin.com/company/peak-craft-club'>
                       <Image alt='' width={40} height={40} src='/images/LinkedIn.png'/>
+                    </a>
+                    <a href='https://github.com/Peak-Craft'>
                       <Image alt='' width={40} height={40} src='/images/GitHub.png'/>
+                    </a>
+                    <a href='informaticsclub@hu.edu.et'>
                       <Image alt='' width={40} height={40} src='/images/Post.png'/>
+                    </a>
                   </div>
                 </div>
                 <div className='flex flex-col items-center space-y-2 mb-6'>
